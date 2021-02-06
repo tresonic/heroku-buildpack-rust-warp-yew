@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/emk/heroku-buildpack-rust.svg?branch=master)](https://travis-ci.org/emk/heroku-buildpack-rust)
 
-This is a Heroku buildpack for Rust with support for [cargo][] and [rustup][].  Features include:
+This is a Heroku buildpack for Rust with support for [cargo][] and [rustup][] (modified for use with warp & yew).  Features include:
 
 - Caching of builds between deployments.
 - Automatic updates to the latest stable Rust by default.
@@ -13,18 +13,6 @@ This is a Heroku buildpack for Rust with support for [cargo][] and [rustup][].  
 [fode]: https://github.com/ericfode/heroku-buildpack-rust
 [cargo]: http://crates.io/
 [rustup]: https://www.rustup.rs/
-
-## Example projects
-
-Here are several example projects:
-
-- [rust-buildpack-example-actix][] uses the popular [Actix][] framework, and runs on stable Rust.
-- [rust-buildpack-example-rocket][] uses the innovative [Rocket][] framework, which currently requires nightly Rust.
-
-[rust-buildpack-example-actix]: https://github.com/emk/rust-buildpack-example-actix
-[Actix]: https://actix.rs/
-[rust-buildpack-example-rocket]: https://github.com/emk/rust-buildpack-example-rocket
-[Rocket]: https://rocket.rs/
 
 ## Using this buildpack
 
